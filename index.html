@@ -1,0 +1,670 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCI MEILANI PUTRI - Draw.io</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #0b132b;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            padding: 70px 0;
+        }
+
+        .banner-section {
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
+        }
+
+        .banner-section-alt {
+            background: linear-gradient(135deg, #1b263b, #0d1b2a);
+        }
+
+        .layout {
+            display: flex;
+            align-items: center;
+            gap: 45px;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .circle-container-left {
+            background: white;
+            color: #333;
+            border-radius: 180px;
+            padding: 55px 45px;
+            box-shadow: 0 10px 30px #0005;
+        }
+
+        .site-title {
+            color: #1d70b8;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 800;
+            overflow-wrap: anywhere;
+            margin-bottom: 12px;
+        }
+
+        .site-subtitle {
+            color: #4a5568;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section-heading {
+            color: #38bdf8;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .content-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #e2e8f0;
+            margin-bottom: 18px;
+        }
+
+        .circle-container-left .content-text {
+            color: #4a5568;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1d70b8;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 28px;
+            margin-top: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #15558d;
+            transform: translateY(-2px);
+        }
+
+        .image-frame {
+            width: 100%;
+            max-width: 520px;
+            margin: auto;
+            border-radius: 100px;
+            overflow: hidden;
+            border: 4px solid white;
+            box-shadow: 0 10px 25px #0005;
+            background: white;
+        }
+
+        .image-frame svg {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .feature-list {
+            list-style: none;
+            color: #4a5568;
+            margin: 20px 0;
+        }
+
+        .feature-list li {
+            line-height: 1.7;
+            margin-bottom: 10px;
+            padding-left: 18px;
+            position: relative;
+            overflow-wrap: anywhere;
+        }
+
+        .feature-list li::before {
+            content: "•";
+            color: #1d70b8;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .feature-card {
+            background: #17243a;
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 22px;
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #e2e8f0;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 15px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font: inherit;
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-message {
+            color: #86efac;
+            margin-top: 12px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background: #070a13;
+            color: #94a3b8;
+            padding: 25px 15px;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        @media (max-width: 800px) {
+            section {
+                padding: 45px 0;
+            }
+
+            .layout {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .circle-container-left {
+                border-radius: 35px;
+                padding: 35px 25px;
+                width: 100%;
+            }
+
+            .column {
+                width: 100%;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-heading {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BAGIAN 1: BANNER UTAMA -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="layout">
+
+                <div class="column">
+                    <div class="circle-container-left">
+                        <header>
+                            <h1 class="site-title">UCI MEILANI PUTRI</h1>
+                            <p class="site-subtitle">
+                                Aplikasi Pembuat Diagram Digital
+                            </p>
+                        </header>
+
+                        <p class="content-text">
+                            Selamat datang di website Draw.io!
+                            Draw.io atau diagrams.net adalah aplikasi
+                            untuk membuat flowchart, UML, diagram jaringan,
+                            dan mind map dengan mudah.
+                        </p>
+
+                        <a href="#tentang" class="btn">Pelajari Lebih Lanjut</a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="image-frame">
+                        <svg viewBox="0 0 520 320"
+                             xmlns="http://www.w3.org/2000/svg"
+                             role="img"
+                             aria-label="Ilustrasi layar Draw.io dengan flowchart">
+
+                            <rect width="520" height="320" fill="#f8fafc"/>
+                            <rect x="0" y="0" width="520" height="38" fill="#e2e8f0"/>
+
+                            <circle cx="20" cy="19" r="6" fill="#ef4444"/>
+                            <circle cx="40" cy="19" r="6" fill="#f59e0b"/>
+                            <circle cx="60" cy="19" r="6" fill="#10b981"/>
+
+                            <text x="85" y="24" fill="#334155" font-size="13">
+                                Draw.io - Flowchart
+                            </text>
+
+                            <rect x="190" y="55" width="140" height="36"
+                                  rx="18" fill="#0284c7"/>
+                            <text x="260" y="78" fill="white"
+                                  font-size="14" text-anchor="middle">Mulai</text>
+
+                            <path d="M260 91 V116" stroke="#64748b" stroke-width="3"/>
+
+                            <rect x="190" y="116" width="140" height="40"
+                                  rx="5" fill="#10b981"/>
+                            <text x="260" y="141" fill="white"
+                                  font-size="13" text-anchor="middle">Proses Data</text>
+
+                            <path d="M260 156 V179" stroke="#64748b" stroke-width="3"/>
+
+                            <polygon points="260,179 315,212 260,245 205,212"
+                                     fill="#f59e0b"/>
+                            <text x="260" y="216" fill="white"
+                                  font-size="12" text-anchor="middle">Keputusan</text>
+
+                            <path d="M205 212 H120 V260"
+                                  stroke="#64748b" stroke-width="3"
+                                  fill="none"/>
+                            <path d="M315 212 H400 V260"
+                                  stroke="#64748b" stroke-width="3"
+                                  fill="none"/>
+
+                            <rect x="65" y="260" width="110" height="35"
+                                  rx="5" fill="#8b5cf6"/>
+                            <text x="120" y="282" fill="white"
+                                  font-size="12" text-anchor="middle">Berhasil</text>
+
+                            <rect x="345" y="260" width="110" height="35"
+                                  rx="5" fill="#ef4444"/>
+                            <text x="400" y="282" fill="white"
+                                  font-size="12" text-anchor="middle">Ulangi</text>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 2: APA ITU DRAW.IO -->
+    <section id="tentang" class="banner-section-alt">
+        <div class="container">
+            <div class="layout">
+
+                <div class="column">
+                    <h2 class="section-heading">Apa Itu Draw.io?</h2>
+
+                    <p class="content-text">
+                        Draw.io merupakan aplikasi diagram digital yang
+                        memungkinkan pengguna membuat, mengedit, dan
+                        menyusun diagram untuk menjelaskan informasi
+                        secara visual.
+                    </p>
+
+                    <p class="content-text">
+                        Aplikasi ini dapat digunakan untuk keperluan
+                        pembelajaran, pekerjaan, presentasi, dan
+                        perancangan sistem perangkat lunak.
+                    </p>
+
+                    <a href="https://app.diagrams.net/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        Kunjungi Draw.io
+                    </a>
+                </div>
+
+                <div class="column">
+                    <div class="image-frame">
+                        <svg viewBox="0 0 500 300"
+                             xmlns="http://www.w3.org/2000/svg"
+                             role="img"
+                             aria-label="Ilustrasi diagram rancangan sistem">
+
+                            <rect width="500" height="300" fill="#f8fafc"/>
+                            <text x="250" y="28" fill="#334155"
+                                  font-size="17" font-weight="bold"
+                                  text-anchor="middle">System Diagram</text>
+
+                            <rect x="175" y="50" width="150" height="42"
+                                  rx="7" fill="#0284c7"/>
+                            <text x="250" y="76" fill="white"
+                                  font-size="14" text-anchor="middle">Pengguna</text>
+
+                            <path d="M250 92 V118 H125 V140 M250 118 H375 V140"
+                                  fill="none" stroke="#64748b" stroke-width="3"/>
+
+                            <rect x="55" y="140" width="140" height="45"
+                                  rx="6" fill="#334155"/>
+                            <text x="125" y="167" fill="white"
+                                  font-size="14" text-anchor="middle">Login</text>
+
+                            <rect x="305" y="140" width="140" height="45"
+                                  rx="6" fill="#334155"/>
+                            <text x="375" y="167" fill="white"
+                                  font-size="14" text-anchor="middle">Profil</text>
+
+                            <path d="M125 185 V215 M375 185 V215"
+                                  fill="none" stroke="#64748b" stroke-width="3"/>
+
+                            <rect x="55" y="215" width="140" height="45"
+                                  rx="6" fill="#059669"/>
+                            <text x="125" y="242" fill="white"
+                                  font-size="14" text-anchor="middle">Administrator</text>
+
+                            <rect x="305" y="215" width="140" height="45"
+                                  rx="6" fill="#d97706"/>
+                            <text x="375" y="242" fill="white"
+                                  font-size="14" text-anchor="middle">Pelanggan</text>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 3: FITUR DRAW.IO -->
+    <section id="fitur" class="banner-section">
+        <div class="container">
+            <div class="layout">
+
+                <div class="column">
+                    <div class="circle-container-left">
+                        <h2 class="section-heading">Fitur-Fitur Draw.io</h2>
+
+                        <p class="content-text">
+                            Draw.io menyediakan berbagai fitur untuk
+                            membantu pengguna membuat diagram.
+                        </p>
+
+                        <ul class="feature-list">
+                            <li><strong>Flowchart:</strong> menggambarkan alur proses.</li>
+                            <li><strong>UML Diagram:</strong> merancang sistem perangkat lunak.</li>
+                            <li><strong>Network Diagram:</strong> menggambarkan jaringan komputer.</li>
+                            <li><strong>Mind Map:</strong> menyusun ide secara terstruktur.</li>
+                            <li><strong>Template:</strong> mempercepat pembuatan diagram.</li>
+                            <li><strong>Ekspor:</strong> menyimpan diagram ke PNG, JPEG, PDF, dan SVG.</li>
+                        </ul>
+
+                        <a href="https://app.diagrams.net/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn">
+                            Buka Draw.io
+                        </a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="feature-grid">
+
+                        <div class="feature-card">
+                            <div class="icon">🔀</div>
+                            <h3>Flowchart</h3>
+                            <p>Menjelaskan urutan langkah dan proses kerja.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="icon">📐</div>
+                            <h3>UML</h3>
+                            <p>Membantu menggambarkan rancangan sistem.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="icon">🌐</div>
+                            <h3>Network</h3>
+                            <p>Menjelaskan hubungan antarperangkat jaringan.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="icon">💡</div>
+                            <h3>Mind Map</h3>
+                            <p>Menyusun gagasan dan informasi secara visual.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 4: MANFAAT -->
+    <section class="banner-section-alt">
+        <div class="container">
+            <div class="layout">
+
+                <div class="column">
+                    <h2 class="section-heading">Manfaat Draw.io</h2>
+
+                    <p class="content-text">
+                        Draw.io memudahkan pengguna menyampaikan ide
+                        dengan diagram yang lebih jelas dan terstruktur.
+                    </p>
+
+                    <p class="content-text">
+                        Mahasiswa dapat menggunakannya untuk tugas
+                        kuliah, flowchart algoritma, UML, diagram
+                        basis data, serta rancangan jaringan komputer.
+                    </p>
+
+                    <a href="https://app.diagrams.net/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn">
+                        Mulai Membuat Diagram
+                    </a>
+                </div>
+
+                <div class="column">
+                    <div class="image-frame">
+                        <svg viewBox="0 0 500 260"
+                             xmlns="http://www.w3.org/2000/svg"
+                             role="img"
+                             aria-label="Ilustrasi proses pembuatan diagram">
+
+                            <rect width="500" height="260" fill="#f8fafc"/>
+                            <rect x="20" y="20" width="460" height="35"
+                                  rx="5" fill="#e2e8f0"/>
+                            <text x="40" y="42" fill="#334155" font-size="13">
+                                draw.io - Diagram Editor
+                            </text>
+
+                            <rect x="35" y="80" width="115" height="55"
+                                  rx="7" fill="#3b82f6"/>
+                            <text x="92" y="112" fill="white"
+                                  font-size="13" text-anchor="middle">Ide</text>
+
+                            <path d="M150 108 H190"
+                                  stroke="#64748b" stroke-width="3"/>
+                            <polygon points="190,108 180,102 180,114"
+                                     fill="#64748b"/>
+
+                            <rect x="190" y="80" width="125" height="55"
+                                  rx="7" fill="#10b981"/>
+                            <text x="252" y="112" fill="white"
+                                  font-size="13" text-anchor="middle">Diagram</text>
+
+                            <path d="M315 108 H355"
+                                  stroke="#64748b" stroke-width="3"/>
+                            <polygon points="355,108 345,102 345,114"
+                                     fill="#64748b"/>
+
+                            <rect x="355" y="80" width="110" height="55"
+                                  rx="7" fill="#8b5cf6"/>
+                            <text x="410" y="112" fill="white"
+                                  font-size="13" text-anchor="middle">Hasil</text>
+
+                            <text x="250" y="190" fill="#475569"
+                                  font-size="15" text-anchor="middle">
+                                Dari ide menjadi visualisasi
+                            </text>
+                            <text x="250" y="215" fill="#64748b"
+                                  font-size="12" text-anchor="middle">
+                                Mudah • Praktis • Terstruktur
+                            </text>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 5: KONTAK -->
+    <section id="kontak" class="banner-section">
+        <div class="container">
+            <div class="layout">
+
+                <div class="column">
+                    <h2 class="section-heading">Hubungi Kami</h2>
+
+                    <p class="content-text">
+                        Punya pertanyaan atau saran mengenai website
+                        Draw.io? Silakan isi formulir berikut.
+                    </p>
+
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" id="nama"
+                               placeholder="Nama Anda" required>
+
+                        <input type="email" id="email"
+                               placeholder="Email Anda" required>
+
+                        <textarea id="pesan"
+                                  placeholder="Tulis pesan Anda..."
+                                  required></textarea>
+
+                        <button type="submit" class="btn">
+                            Kirim Pesan
+                        </button>
+
+                        <p id="formMessage"
+                           class="form-message"
+                           aria-live="polite"></p>
+                    </form>
+                </div>
+
+                <div class="column">
+                    <div class="image-frame">
+                        <svg viewBox="0 0 500 250"
+                             xmlns="http://www.w3.org/2000/svg"
+                             role="img"
+                             aria-label="Ilustrasi browser Draw.io">
+
+                            <rect width="500" height="250" fill="#f8fafc"/>
+                            <rect x="20" y="20" width="460" height="35"
+                                  rx="6" fill="#e2e8f0"/>
+
+                            <circle cx="38" cy="37" r="5" fill="#ef4444"/>
+                            <circle cx="55" cy="37" r="5" fill="#f59e0b"/>
+                            <circle cx="72" cy="37" r="5" fill="#10b981"/>
+
+                            <text x="95" y="41" fill="#475569" font-size="12">
+                                Draw.io Workspace
+                            </text>
+
+                            <rect x="155" y="80" width="190" height="45"
+                                  rx="7" fill="#3b82f6"/>
+                            <text x="250" y="108" fill="white"
+                                  font-size="14" text-anchor="middle">Mulai Membuat</text>
+
+                            <path d="M250 125 V155"
+                                  stroke="#64748b" stroke-width="3"/>
+                            <polygon points="250,163 242,151 258,151"
+                                     fill="#64748b"/>
+
+                            <rect x="155" y="170" width="190" height="45"
+                                  rx="7" fill="#10b981"/>
+                            <text x="250" y="198" fill="white"
+                                  font-size="14" text-anchor="middle">Diagram Selesai</text>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            Copyright &copy; 2026
+            <strong>UCI MEILANI PUTRI</strong>
+        </p>
+        <p>Website Informasi Aplikasi Draw.io</p>
+    </footer>
+
+    <!-- JavaScript Form -->
+    <script>
+        const contactForm = document.getElementById("contactForm");
+        const formMessage = document.getElementById("formMessage");
+
+        contactForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const nama = document.getElementById("nama").value.trim();
+
+            formMessage.textContent =
+                "Terima kasih, " + nama +
+                "! Pesan berhasil diperiksa pada halaman ini. Formulir ini belum mengirim data ke server.";
+
+            contactForm.reset();
+        });
+    </script>
+
+</body>
+</html>
